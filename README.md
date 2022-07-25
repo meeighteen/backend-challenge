@@ -21,3 +21,8 @@ npm install
 ```bash
  npm run dev
 ```
+
+4. Run test
+```bash
+ npm run test
+```
