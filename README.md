@@ -26,3 +26,14 @@ npm install
 ```bash
  npm run test
 ```
+5. For test the whatsapp bot framework with Venom
+```bash
+ scan the QR code with your device tester as a bot
+```
+6. Finally test the bot sending messages from another device to the device connected as bot
+```bash
+ send some messages as Hi, Hello, Hola, etc. 
+```
+
+## Comments
+- The are not too many responses as training phrases.
