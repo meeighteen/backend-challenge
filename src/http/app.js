@@ -10,6 +10,7 @@ app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Routes
 app.use("/api/elements",elementsRoutes);
 
 export default app;

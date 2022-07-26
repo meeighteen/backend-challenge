@@ -1,5 +1,5 @@
 import axios from "axios";
-import dataSetElements from "./../sample.json";
+// import dataSetElements from "./../sample.json";
 
 const getElements = async (req, res) => {
     const { limit, offset } = req.body;
