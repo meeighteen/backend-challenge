@@ -4,6 +4,8 @@ Challenge backend in javascript
 ## Technologies used
 - NodeJS (asynchronous event-driven JavaScript runtime)
 - Express (REST Server)
+- Venom Bot Framework
+- Dialog Flow (gcp)
 
 ## Commands
 ### Run the project
@@ -22,7 +24,7 @@ npm install
  npm run dev
 ```
 
-4. Run test
+4. Run test, for test the endpoints.
 ```bash
  npm run test
 ```
