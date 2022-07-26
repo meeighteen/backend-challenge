@@ -39,3 +39,6 @@ npm install
 
 ## Comments
 - The are not too many responses as training phrases.
+
+## Pictures
+![image](https://user-images.githubusercontent.com/38815723/181042891-4208ab65-9449-40f4-9280-7431dcb04611.png)
