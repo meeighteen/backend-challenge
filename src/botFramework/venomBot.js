@@ -1,8 +1,8 @@
 import { create, Whatsapp } from 'venom-bot';
 import { sendToDialogFlow } from "./../dialogFlow/dialogflow";
-import { v4 } from "uuid";
+import { v1 } from "uuid";
 
-const sessionIds = new Map();
+let sessionIds = new Map();
 
 const createSession = async () =>{ 
   try{
@@ -22,7 +22,7 @@ function start(client) {
   console.log("listening messages");
   client.onMessage(async (message) => {
     console.log(message);
-    if (!message.sender.isBusiness || message.from !== "status@broadcast" || !message.chat.isGroup){
+    if (message.from !== 'status@broadcast' || !message.chat.isMedia || !message.chat.isGroup){
       setSessionAndUser(message.from);
       let session = sessionIds.get(message.from);
       let payload = await sendToDialogFlow(message.body, session);
@@ -52,7 +52,7 @@ function sendMessageToWhatsapp(client, message, response) {
 async function setSessionAndUser(senderId) {
   try{
     if(!sessionIds.has(senderId)){
-      sessionIds.set(senderId, v4());
+      sessionIds.set(senderId, v1());
     }
   }catch(error){
     throw error;
