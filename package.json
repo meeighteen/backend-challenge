@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec babel-node src/http/index.js",
-    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest"
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest",
+    "bot": "nodemon --exec babel-node src/botFramework/index.js"
   },
   "keywords": [],
   "author": "",
