@@ -22,7 +22,7 @@ function start(client) {
   console.log("listening messages");
   client.onMessage(async (message) => {
     console.log(message);
-    if (!message.sender.isBusiness || !message.from == "status@broadcast" || !message.chat.isGroup){
+    if (!message.sender.isBusiness || message.from !== "status@broadcast" || !message.chat.isGroup){
       setSessionAndUser(message.from);
       let session = sessionIds.get(message.from);
       let payload = await sendToDialogFlow(message.body, session);
