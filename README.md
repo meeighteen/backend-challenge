@@ -1,6 +1,11 @@
 # backend-challenge
 Challenge backend in javascript
 
+- Ejemplo usando como lenguaje Node.js de consumo de un API.
+- Crear un árbol de decisiones en IBM Watson u otra herramienta.
+- Ejemplo para Invocar al Bot Framework con Webhooks.
+- Ejemplo de uso de patrones.
+
 ## Technologies used
 - NodeJS (asynchronous event-driven JavaScript runtime)
 - Express (REST Server)
