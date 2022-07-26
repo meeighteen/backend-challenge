@@ -4,8 +4,8 @@ Challenge backend in javascript
 ## Technologies used
 - NodeJS (asynchronous event-driven JavaScript runtime)
 - Express (REST Server)
-- Venom Bot Framework
-- Dialog Flow (gcp)
+- Venom-Bot (Bot Framework)
+- Dialog Flow (Google Cloud Platform)
 
 ## Commands
 ### Run the project
