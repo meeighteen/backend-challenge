@@ -49,11 +49,24 @@ npm install
 ## Comments
 - The are not too many responses as training phrases.
 
-## Pictures
+## Watson Assistant
+```bash
+ file: restaurante-dialog.json
+```
+![image](https://user-images.githubusercontent.com/38815723/181113867-1a7ba988-cdd3-4477-b291-b0a11f34955f.png)
+![image](https://user-images.githubusercontent.com/38815723/181113889-5d294c66-1e05-4485-9d6a-9449c3e5c914.png)
+
+## Dialog Flow
+```bash
+ file: challenge-bot.zip
+```
 ![image](https://user-images.githubusercontent.com/38815723/181093541-88d52057-e7f5-4544-92d5-d94175b07e70.png)
 ![image](https://user-images.githubusercontent.com/38815723/181093473-c419905c-e704-4c21-b3f9-65c247afd96a.png)
 ![image](https://user-images.githubusercontent.com/38815723/181093735-0bbab06a-08e2-4316-929d-c1c0d6c27a82.png)
 ![image](https://user-images.githubusercontent.com/38815723/181094082-268399d2-ca8c-40a9-954f-1ca086a44bea.png)
+
+## Venom-bot (Bot Framework WhatsApp)
+
 ![image](https://user-images.githubusercontent.com/38815723/181054048-6f47530b-a240-4a46-ad8f-e86748ab5ab6.png)
 ![image](https://user-images.githubusercontent.com/38815723/181094458-731164b8-b53c-4987-a30a-9f7b10eb5974.png)
 
