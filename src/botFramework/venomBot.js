@@ -21,16 +21,16 @@ const createSession = async () =>{
 function start(client) {
   console.log("listening messages");
   client.onMessage(async (message) => {
-    console.log(message);
-    if (message.from !== 'status@broadcast' || !message.chat.isMedia || !message.chat.isGroup){
-      setSessionAndUser(message.from);
-      let session = sessionIds.get(message.from);
-      let payload = await sendToDialogFlow(message.body, session);
-      let responses = payload.fulfillmentMessages;
-      for (const response of responses) {
-        sendMessageToWhatsapp(client, message, response);
-      } 
-    }
+    if (message.type === 'chat' && !message.broadcast){
+        console.log(message);
+        setSessionAndUser(message.from);
+        let session = sessionIds.get(message.from);
+        let payload = await sendToDialogFlow(message.body, session);
+        let responses = payload.fulfillmentMessages;
+        for (const response of responses) {
+          sendMessageToWhatsapp(client, message, response);
+        } 
+      }
   });
 }
 
