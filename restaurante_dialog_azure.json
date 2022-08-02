@@ -1,0 +1,716 @@
+{
+  "intents": [
+    {
+      "intent": "clienteConfirma",
+      "examples": [
+        {
+          "text": "Aceptado"
+        },
+        {
+          "text": "aceptar"
+        },
+        {
+          "text": "Confirmado"
+        },
+        {
+          "text": "confirmar"
+        },
+        {
+          "text": "De acuerdo"
+        },
+        {
+          "text": "Espero mi pedido"
+        },
+        {
+          "text": "Es todo"
+        },
+        {
+          "text": "Muchas gracias"
+        },
+        {
+          "text": "Muy bien"
+        },
+        {
+          "text": "Quiero confirmar mi pedido"
+        },
+        {
+          "text": "Quiero confirmar mi reservacion"
+        }
+      ],
+      "description": "El cliente tiene la intencion de confirmar su pedido/reservacion"
+    },
+    {
+      "intent": "clienteConfirmaReserva",
+      "examples": [
+        {
+          "text": "confirmar"
+        },
+        {
+          "text": "confirmo reserva para una persona, 8de agosto"
+        },
+        {
+          "text": "Reserva para 1 persona, 8 de agosto a las 9 pm a nombre de Josue Mamani"
+        },
+        {
+          "text": "Reserva para 2 personas, fecha 19 de setiembre a las 10 pm, a nombre de Alberto Sanchez"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "clienteDesiste",
+      "examples": [
+        {
+          "text": "deseo anular la orden"
+        },
+        {
+          "text": "no es necesario"
+        },
+        {
+          "text": "no gracias"
+        },
+        {
+          "text": "no quiero"
+        },
+        {
+          "text": "quiero cancelar mi pedido"
+        }
+      ],
+      "description": "El cliente tiene la intencion de desistir de su pedido/reservacion"
+    },
+    {
+      "intent": "consultaServicio",
+      "examples": [
+        {
+          "text": "hacen envios?"
+        },
+        {
+          "text": "hacen envios a domicilioo"
+        },
+        {
+          "text": "hay delivery?"
+        },
+        {
+          "text": "para enviar el pedido"
+        },
+        {
+          "text": "para recoger el pedido"
+        },
+        {
+          "text": "puedo recogerlo en el local?"
+        },
+        {
+          "text": "recoger"
+        }
+      ],
+      "description": "El cliente quiere saber los servicios que ofrece el restaurante"
+    },
+    {
+      "intent": "opciones",
+      "examples": [
+        {
+          "text": "ayuda"
+        },
+        {
+          "text": "lista"
+        },
+        {
+          "text": "no se que decidir"
+        },
+        {
+          "text": "opciones"
+        },
+        {
+          "text": "quiero un menu de opciones"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ordenaPlatillo",
+      "examples": [
+        {
+          "text": "aguadito"
+        },
+        {
+          "text": "Asado con pure"
+        },
+        {
+          "text": "picante a la tacnena"
+        },
+        {
+          "text": "seco de cordero"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "pideCarta",
+      "examples": [
+        {
+          "text": "Me puede mostrar la carta"
+        },
+        {
+          "text": "Muestrame la carta"
+        },
+        {
+          "text": "que hay para comer?"
+        },
+        {
+          "text": "Que platillos hay?"
+        },
+        {
+          "text": "Quiero saber que puedo comer"
+        },
+        {
+          "text": "Quiero ver la carta"
+        },
+        {
+          "text": "Tengo hambre"
+        }
+      ],
+      "description": "El cliente tiene la intencion de ver la carta"
+    },
+    {
+      "intent": "realizaReservacion",
+      "examples": [
+        {
+          "text": "deseo reservar"
+        },
+        {
+          "text": "quiero cenar"
+        },
+        {
+          "text": "quiero realizar una reservacion"
+        },
+        {
+          "text": "quiero reservar"
+        },
+        {
+          "text": "reserva"
+        },
+        {
+          "text": "reservacion"
+        }
+      ],
+      "description": "El cliente quiere realizar una reservacion en el restaurante"
+    },
+    {
+      "intent": "realizarPedido",
+      "examples": [
+        {
+          "text": "deseo ordenar"
+        },
+        {
+          "text": "quiero ordenar"
+        },
+        {
+          "text": "quiero pedir"
+        },
+        {
+          "text": "quiero realizar una orden"
+        },
+        {
+          "text": "quiero realizar un pedido"
+        }
+      ],
+      "description": "El cliente desea realizar un pedido, para recogerlo o delivery"
+    },
+    {
+      "intent": "saludo",
+      "examples": [
+        {
+          "text": "hi"
+        },
+        {
+          "text": "hiiii"
+        },
+        {
+          "text": "hola"
+        },
+        {
+          "text": "jai"
+        },
+        {
+          "text": "olas"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "carta",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Entrada",
+          "synonyms": [
+            "Entrada"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Plato fuerte",
+          "synonyms": [
+            "Plato fuerte"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "opciones",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "menu",
+          "synonyms": [
+            "carta"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "reservacion",
+          "synonyms": [
+            "reserva"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "servicios",
+          "synonyms": [
+            "servicios"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "reservacion",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "reservar",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "servicios",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "delivery",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "recogeCliente",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Cliente cancela servicio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Lamentamos que tengas que cancelar tu ultima reservación. Se te ofrece algo mas?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#clienteDesiste",
+      "dialog_node": "node_10_1658869935917",
+      "previous_sibling": "node_2_1658869119956"
+    },
+    {
+      "type": "standard",
+      "title": "Opcion: reservacion",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_7_1659447081803",
+      "context": {
+        "readyToReserve": "yes"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_5_1659451433345"
+      },
+      "conditions": "@opciones:reservacion",
+      "dialog_node": "node_10_1659449474763",
+      "previous_sibling": "node_7_1659454014107"
+    },
+    {
+      "type": "standard",
+      "title": "Cliente desea ordenar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Estas listo para ordenar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "readyToOrder": "yes"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1659453499728"
+      },
+      "conditions": "$interestedToOrder==\"yes\"",
+      "dialog_node": "node_1_1659453392629",
+      "previous_sibling": "node_5_1659451433345"
+    },
+    {
+      "type": "standard",
+      "title": "Ver la carta",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tenemos una gran variedad de comida, ¿cuál te gustaría? "
+              },
+              {
+                "text": "Seco a la norteña"
+              },
+              {
+                "text": "Asado con puré"
+              },
+              {
+                "text": "Arroz con pollo"
+              },
+              {
+                "text": "Picante a la tacneña"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "context": {
+        "interestedToOrder": "yes"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1659453392629"
+      },
+      "conditions": "#pideCarta || $interestedToSeeMenu==\"yes\"",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1658869119956",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Opcion: servicios",
+      "output": {
+        "generic": [
+          {
+            "title": "Tenemos 2 tipos de servicios",
+            "options": [
+              {
+                "label": "Recojo en el local",
+                "value": {
+                  "input": {
+                    "text": "recojeCliente"
+                  }
+                }
+              },
+              {
+                "label": "Envío a domicilio",
+                "value": {
+                  "input": {
+                    "text": "delivery"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1659447081803",
+      "conditions": "@opciones:servicios",
+      "dialog_node": "node_2_1658869514079",
+      "previous_sibling": "node_10_1659449474763"
+    },
+    {
+      "type": "standard",
+      "title": "Cliente realiza orden/pedido",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muy bien! Ahora describe tu orden y nosotros nos encargamos del resto."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "orderCompleted": "yes"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_8_1659453582041"
+      },
+      "conditions": "$readyToOrder==\"yes\"",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1659453499728",
+      "previous_sibling": "node_1_1659453392629"
+    },
+    {
+      "type": "standard",
+      "title": "Realiza reservacion",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Si deseas realizar una reservacion, necesito que me brindes los siguientes datos:"
+              },
+              {
+                "text": "+ Cantidad de personas"
+              },
+              {
+                "text": "+ fecha a reservar"
+              },
+              {
+                "text": "+ hora a reservar"
+              },
+              {
+                "text": "+ encargado de la reserva"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "context": {
+        "reserved": "yes"
+      },
+      "conditions": "$readyToReserve == \"yes\" || #realizaReservacion",
+      "dialog_node": "node_5_1659451433345",
+      "previous_sibling": "node_10_1658869935917"
+    },
+    {
+      "type": "standard",
+      "title": "AceptarReserva",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muchas gracias tu reserva se ha realizado correctamente."
+              },
+              {
+                "text": "Felicitaciones, tu reserva se ha guardado exitosamente."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_5_1659451433345",
+      "conditions": "$reserved == \"yes\"",
+      "dialog_node": "node_5_1659453151179"
+    },
+    {
+      "type": "standard",
+      "title": "No entendimiento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No comprendi lo que quisiste decir."
+              },
+              {
+                "text": "Podrias repetirlo?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1659446487040",
+      "previous_sibling": "node_8_1659453582041"
+    },
+    {
+      "type": "standard",
+      "title": "Opciones",
+      "output": {
+        "generic": [
+          {
+            "title": "Veamos algunas opciones",
+            "options": [
+              {
+                "label": "Ver la carta",
+                "value": {
+                  "input": {
+                    "text": "menu"
+                  }
+                }
+              },
+              {
+                "label": "Realizar reservacion",
+                "value": {
+                  "input": {
+                    "text": "reservacion"
+                  }
+                }
+              },
+              {
+                "label": "Ver servicios",
+                "value": {
+                  "input": {
+                    "text": "servicios"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#opciones",
+      "dialog_node": "node_7_1659447081803"
+    },
+    {
+      "type": "standard",
+      "title": "Opcion: carta",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Veo que te interesa ver la carta."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1659447081803",
+      "context": {
+        "interestedToSeeMenu": "yes"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_2_1658869119956"
+      },
+      "conditions": "@opciones:menu",
+      "dialog_node": "node_7_1659454014107"
+    },
+    {
+      "type": "standard",
+      "title": "Finalizar orden",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muchas gracias por preferirnos, nos comunicaremos contigo para coordinar la entrega de tu pedido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "$orderCompleted==\"yes\"",
+      "dialog_node": "node_8_1659453582041",
+      "previous_sibling": "node_2_1659453499728"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hola, querido comensal."
+              },
+              {
+                "text": "Hola, en que puedo servirte?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#saludo",
+      "digress_in": "does_not_return",
+      "dialog_node": "Welcome",
+      "previous_sibling": "node_7_1659447081803"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    },
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": ""
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
