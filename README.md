@@ -51,10 +51,10 @@ npm install
 
 ## Watson Assistant
 ```bash
- file: restaurante-dialog.json
+ file: restaurante_dialog_ibm.json
 ```
 ![image](https://user-images.githubusercontent.com/38815723/181113867-1a7ba988-cdd3-4477-b291-b0a11f34955f.png)
-![image](https://user-images.githubusercontent.com/38815723/181113889-5d294c66-1e05-4485-9d6a-9449c3e5c914.png)
+![Screenshot from 2022-08-02 11-13-30](https://user-images.githubusercontent.com/38815723/182423188-7a9b40fb-0e6e-41da-a1b0-d564e0c36cce.png)
 
 ## Dialog Flow
 ```bash
